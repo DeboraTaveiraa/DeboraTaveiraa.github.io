@@ -1,0 +1,1 @@
+# GeradorDeLinkWhatsApp.github.io
