@@ -130,3 +130,34 @@ body {
   width: 100%;
   min-width: 1415px;
 }
+
+
+/* Media query */
+@media (max-width: 405px) {
+  #header-portfolio {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+  }
+
+  main {
+    margin: 0;
+  }
+  
+  header {
+    border: 1px solid red;
+    font-size: 0.7em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  header .ola {
+    width: 30px;
+  }
+  header .ola h5 {
+    font-size: 0.7em;
+  }
+  header h1 {
+    font-size: 0.5em;
+  }
+}
