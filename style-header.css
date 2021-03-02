@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+#container-portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+}
+
+#portfolio {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio .content-portfolio {
+  width: 70%;
+}
+
+.content-portfolio #header-portfolio {
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #212121;
+  border-radius: 50px;
+
+  color: #f1f1f1;
+  box-shadow: 10px 15px 3px #8888;
+}
+
+.content-portfolio main {
+  width: 300px;
+  margin-left: 40px;
+}
+
+.content-portfolio header .ola {
+  background: #CA66FE;
+  width: 120px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px 15px 15px 2px;
+  font-size: 20px;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.content-portfolio header h1 {
+  margin: 10px 0;
+  color: #CA66FE;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.content-portfolio header p {
+  font-weight: 500;
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.descricao-user p {
+  display: flex;
+  align-items: center;
+
+  font-weight: 300;
+  font-size: 16px;
+
+  line-height: 35px;
+}
+
+.descricao-user p span.email,
+.descricao-user p span.address {
+  background-size: 30px;
+  background-position-y: center;
+
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+}
+
+.descricao-user span.email {
+  background: url("../images/email.png") no-repeat;
+}
+
+.descricao-user span.address {
+  background: url("../images/marcador.png") no-repeat;
+}
+
+/* Imagem de perfil */
+.image-perfil {
+  width: 50%;
+  height: 300px;
+  text-align: center;
+}
+
+.image-perfil img {
+  border-radius: 120px;
+
+  box-shadow: 0 0 0.2em rgb(179, 0, 119);
+}
+
+/* Rodapé */
+#container-portfolio footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-width: 1415px;
+}

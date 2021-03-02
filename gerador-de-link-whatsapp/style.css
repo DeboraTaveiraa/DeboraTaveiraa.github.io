@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#app {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greenName {
+  color: rgb(87, 201, 87);
+}
+
+.container-phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prefix {
+  width: 30px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone {
+  flex: 1;
+  border-radius: 0 5px 5px 0;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 1px solid rgb(87, 201, 87);
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: rgb(87, 201, 87);
+  color: #fff;
+}
+
+.link {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+a {
+  color: #2eb5e0;
+}
+
+@media (max-width: 405px) {
+  #app {
+    width: 100%;
+  }
+  .container-phone,
+  textarea {
+    font-size: 0.9em;
+  }
+  .phone {
+    width: 100%;
+  }
+  button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 655px) {
+  #app {
+    width: 80%;
+  }
+}
