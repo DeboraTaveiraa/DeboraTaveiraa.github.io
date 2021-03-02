@@ -1,6 +1,6 @@
 ## Hello everyone!
 
-[View my profile here](https://deborataveiraa.github.io/index.html)
+[View my profile here](https://deborataveiraa.github.io/profile/index.html)
 
 ### My projects
 [Link generator for WhatsApp](https://deborataveiraa.github.io/gerador-de-link-whatsapp/index.html)

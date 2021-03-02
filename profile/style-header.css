@@ -103,11 +103,11 @@ body {
 }
 
 .descricao-user span.email {
-  background: url("../images/email.png") no-repeat;
+  background: url("/profile/images/email.png") no-repeat;
 }
 
 .descricao-user span.address {
-  background: url("../images/marcador.png") no-repeat;
+  background: url("/profile/images/marcador.png") no-repeat;
 }
 
 /* Imagem de perfil */
