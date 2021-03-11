@@ -2,49 +2,107 @@
 
 * {
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #app {
   width: 50%;
   height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "h2"
+  "form";
+  grid-gap: 3rem;
+  text-align: center;
   justify-content: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
-.greenName {
-  color: rgb(87, 201, 87);
+h2 {
+  grid-area:  h2;
 }
 
-.container-phone {
-  display: flex;
-  justify-content: space-between;
+form {
+  grid-area: form;
+  max-width: 90%;
+  justify-content: center;
+  display: grid;
+  gap: 30px 0px;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "form-one"
+  "form-two"
+  "openLink";
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-one {
+  grid-area: form-one;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: 
+  "labelPhone labelPhone"
+  "prefix phone";
+  gap: 5px 0px;
+
+}
+.labelPhone {
+  grid-area: labelPhone;
 }
 
 .prefix {
-  width: 30px;
+  grid-area:  prefix;
   text-align: center;
   border-radius: 5px 0 0 5px;
 }
 
 .phone {
-  flex: 1;
+  grid-area: phone;
   border-radius: 0 5px 5px 0;
 }
 
+.form-two {
+  grid-area: form-two;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "labelMessage labelMessage"
+  "message message";
+  gap: 5px 0px;
+}
+
+.labelMessage {
+  grid-area: labelMessage;
+}
+.message {
+  grid-area: message;
+}
+.openLink {
+  grid-area: openLink;
+}
+.greenName {
+  color: #18A558;
+}
+
+label {
+  color: gray;
+}
 input,
 textarea,
 button {
   padding: 10px;
   font-size: 1.1em;
   border-radius: 5px;
-  border: 1px solid rgb(87, 201, 87);
 }
 
 input,
 textarea {
-  margin-bottom: 10px;
+  border: 1px solid #b5b6b7;
 }
 
 textarea {
@@ -52,37 +110,16 @@ textarea {
 }
 
 button {
-  background-color: rgb(87, 201, 87);
+  background-color: #18A558;
   color: #fff;
+  border: none;
 }
 
-.link {
-  margin-top: 15px;
-  font-size: 1.1em;
-}
-
-a {
-  color: #2eb5e0;
-}
-
-@media (max-width: 405px) {
+@media (max-width: 639px) {
   #app {
-    width: 100%;
+    width: 90%;
   }
-  .container-phone,
-  textarea {
-    font-size: 0.9em;
-  }
-  .phone {
-    width: 100%;
-  }
-  button {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 655px) {
-  #app {
-    width: 80%;
+  h2 {
+    font-size: 1.2em;
   }
 }
